@@ -11,7 +11,6 @@ public class CreateSnippets {
 	private final String USER_AGENT = "Mozilla/5.0";
 
 	public static void createSnippets() throws Exception {
-	//public static void main(String[] args) throws Exception {
 
 		CreateSnippets http = new CreateSnippets();
 		

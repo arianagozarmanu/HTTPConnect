@@ -27,13 +27,18 @@ public class DeleteSnippetsSteps extends ScenarioSteps {
 	}
 	
 	@Step
-	public void deleteSnippets(){
-		
+	public void deleteSnippets() throws Exception{
+		gruyere.deleteSnippets();
+	}
+	
+	@Step
+	public void is_the_home_page() {
+		gruyere.open();
 	}
 	
 	@Step
 	public void validateRemoval(){
-		
+		gruyere.checkAllWereRemoved();
 	}
 
 }
