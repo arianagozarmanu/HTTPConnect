@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Random;
 
 public class DeleteSnippets {
 
@@ -13,10 +12,10 @@ public class DeleteSnippets {
 	public static void deleteSnippets() throws Exception {
 
 		DeleteSnippets http = new DeleteSnippets();
-		
+
 		int i;
 
-		for(i=0;i<Constants.snippetsNr;i++){
+		for (i = 0; i < Constants.snippetsNr; i++) {
 			http.delete(0);
 		}
 
@@ -53,5 +52,5 @@ public class DeleteSnippets {
 		System.out.println(response.toString());
 
 	}
-	
+
 }

@@ -13,11 +13,11 @@ public class CreateSnippets {
 	public static void createSnippets() throws Exception {
 
 		CreateSnippets http = new CreateSnippets();
-		
-		int i,nr;
-		Random rnd=new Random();
-		for(i=0;i<Constants.snippetsNr;i++){
-			nr=rnd.nextInt(1000);
+
+		int i, nr;
+		Random rnd = new Random();
+		for (i = 0; i < Constants.snippetsNr; i++) {
+			nr = rnd.nextInt(1000);
 			http.create(Integer.toString(nr));
 		}
 
@@ -56,26 +56,26 @@ public class CreateSnippets {
 	}
 
 	/*
-	 * // HTTP POST request private void sendPost() throws Exception {
-	 * 
-	 * String urlParameters = "uid=cheddar"; URL url = new
-	 * URL("http://google-gruyere.appspot.com/216846574386/"); URLConnection
-	 * conn = url.openConnection();
-	 * 
-	 * conn.setDoOutput(true);
-	 * 
-	 * OutputStreamWriter writer = new
-	 * OutputStreamWriter(conn.getOutputStream());
-	 * 
-	 * writer.write(urlParameters); writer.flush();
-	 * 
-	 * String line; BufferedReader reader = new BufferedReader(new
-	 * InputStreamReader(conn.getInputStream()));
-	 * 
-	 * while ((line = reader.readLine()) != null) { System.out.println(line); }
-	 * writer.close(); reader.close();
-	 * 
-	 * }
-	 */
+	  // HTTP POST request private void sendPost() throws Exception {
+	  
+	  String urlParameters = "uid=cheddar"; URL url = new
+	  URL("http://google-gruyere.appspot.com/216846574386/"); URLConnection
+	  conn = url.openConnection();
+	  
+	  conn.setDoOutput(true);
+	  
+	  OutputStreamWriter writer = new
+	  OutputStreamWriter(conn.getOutputStream());
+	  
+	  writer.write(urlParameters); writer.flush();
+	  
+	  String line; BufferedReader reader = new BufferedReader(new
+	  InputStreamReader(conn.getInputStream()));
+	  
+	  while ((line = reader.readLine()) != null) { System.out.println(line); }
+	  writer.close(); reader.close();
+	  
+	  }
+	*/
 
 }
