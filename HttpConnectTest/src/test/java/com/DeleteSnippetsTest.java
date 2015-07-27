@@ -32,7 +32,7 @@ public class DeleteSnippetsTest {
 	public void delete_all_snippets_created() throws Exception {
 		snippets.login(Constants.urlLogin);
 		snippets.addSnippets();
-		snippets.is_the_home_page();
+		snippets.goToMySnippetsPage();
 		snippets.deleteSnippets();
 		snippets.validateRemoval();
 	}

@@ -32,7 +32,7 @@ public class GruyerePage extends PageObject {
 		// Delete with request
 		// DeleteSnippets.deleteSnippets();
 
-		goToMySnippets();
+		goToMySnippetsTab();
 
 		int i;
 		for (i = 0; i < Constants.snippetsNr; i++)
@@ -40,7 +40,7 @@ public class GruyerePage extends PageObject {
 
 	}
 
-	public void goToMySnippets() {
+	public void goToMySnippetsTab() {
 		mySnippetsTab.click();
 	}
 

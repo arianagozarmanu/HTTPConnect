@@ -29,7 +29,7 @@ public class DeleteSnippetsSteps extends ScenarioSteps {
 	}
 
 	@Step
-	public void is_the_home_page() {
+	public void goToMySnippetsPage() {
 		gruyere.open();
 	}
 
